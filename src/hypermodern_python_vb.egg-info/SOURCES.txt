@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/hypermodern_python_vb/__init__.py
+src/hypermodern_python_vb.egg-info/PKG-INFO
+src/hypermodern_python_vb.egg-info/SOURCES.txt
+src/hypermodern_python_vb.egg-info/dependency_links.txt
+src/hypermodern_python_vb.egg-info/top_level.txt
