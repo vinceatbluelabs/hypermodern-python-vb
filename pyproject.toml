@@ -35,6 +35,4 @@ source = ["hypermodern_python_vb"]
 
 [tool.coverage.report]
 show_missing = true
-
-[tool.coverage.report]
 fail_under = 100
