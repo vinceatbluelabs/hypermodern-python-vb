@@ -1,5 +1,6 @@
-import nox
 import tempfile
+
+import nox
 
 
 @nox.session(python=["3.8", "3.7"])
