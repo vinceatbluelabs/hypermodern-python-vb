@@ -1,8 +1,7 @@
 import click.testing
-import requests
-import pytest
-
 from hypermodern_python_vb import console
+import pytest
+import requests
 
 
 @pytest.fixture
