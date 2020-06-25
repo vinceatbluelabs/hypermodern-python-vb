@@ -3,6 +3,10 @@ import tempfile
 import nox
 
 
+locations = "src", "tests", "noxfile.py"
+package = "hypermodern_python"
+
+
 @nox.session(python=["3.8", "3.7"])
 def tests(session):
     args = session.posargs or ["--cov", "-m", "not e2e"]
@@ -11,9 +15,6 @@ def tests(session):
         session, "coverage[toml]", "pytest", "pytest-cov", "pytest-mock"
     )
     session.run("pytest", *args)
-
-
-locations = "src", "tests", "noxfile.py"
 
 
 @nox.session(python=["3.8", "3.7"])
@@ -79,6 +80,14 @@ def pytype(session):
     args = session.posargs or ["--disable=import-error", *locations]
     install_with_constraints(session, "pytype")
     session.run("pytype", *args)
+
+
+@nox.session(python=["3.8", "3.7"])
+def typeguard(session):
+    args = session.posargs or ["-m", "not e2e"]
+    session.run("poetry", "install", "--no-dev", external=True)
+    install_with_constraints(session, "pytest", "pytest-mock", "typeguard")
+    session.run("pytest", f"--typeguard-packages={package}", *args)
 
 
 nox.options.sessions = "lint", "mypy", "pytype", "tests"
