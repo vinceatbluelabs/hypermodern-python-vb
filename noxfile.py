@@ -73,4 +73,12 @@ def mypy(session):
     session.run("mypy", *args)
 
 
-nox.options.sessions = "lint", "safety", "tests"
+@nox.session(python="3.7")
+def pytype(session):
+    """Run the static type checker."""
+    args = session.posargs or ["--disable=import-error", *locations]
+    install_with_constraints(session, "pytype")
+    session.run("pytype", *args)
+
+
+nox.options.sessions = "lint", "mypy", "pytype", "tests"

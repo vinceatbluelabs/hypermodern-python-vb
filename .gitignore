@@ -1,4 +1,5 @@
 __pycache__
+/.pytype
 /.nox
 /.coverage
 /src/hypermodern_python_vb.egg-info/
