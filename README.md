@@ -4,6 +4,6 @@
 
 [![PyPI](https://img.shields.io/pypi/v/hypermodern-python-vb.svg)](https://pypi.org/project/hypermodern-python-vb/)
 
-[![Codecov](https://codecov.io/gh/<your-username>/hypermodern-python/branch/master/graph/badge.svg)](https://codecov.io/gh/<your-username>/hypermodern-python)
+[![Codecov](https://codecov.io/gh/vinceatbluelabs/hypermodern-python-vb/branch/master/graph/badge.svg)](https://codecov.io/gh/vinceatbluelabs/hypermodern-python-vb)
 
 Runthrough of https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
