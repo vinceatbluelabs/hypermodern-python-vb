@@ -7,6 +7,7 @@ readme = "README.md"
 homepage = "https://github.com/vinceatbluelabs/hypermodern-python-vb"
 repository = "https://github.com/vinceatbluelabs/hypermodern-python-vb"
 keywords = ["hypermodern"]
+documentation = "https://hypermodern-python-vb.readthedocs.io"
 authors = ["Vince Broz <vince.broz@bluelabs.com>"]
 
 [tool.poetry.dependencies]
